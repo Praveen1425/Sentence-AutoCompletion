@@ -20,25 +20,18 @@ Other Python dependencies listed in requirements.txt
 
 # Installation
 # Step 1: Clone the repository
-bash
-Copy
-Edit
 git clone https://github.com/your-repository/sentence-autocompletion.git
+
 cd sentence-autocompletion
 # Step 2: Create a virtual environment
 For better dependency management, it's recommended to create a virtual environment.
 
-bash
-Copy
-Edit
 python -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\activate
+
+venv\Scripts\activate # Activate virtual Enviornment
 # Step 3: Install dependencies
 Install all the required Python packages:
 
-bash
-Copy
-Edit
 pip install -r requirements.txt
 
 # Step 4: Prepare the Dataset
@@ -51,13 +44,9 @@ The dataset should have a column named PlayerLine containing text data.
 # Step 5: Train the Model
 Run train_model.py to preprocess the text data and train the LSTM model.
 
-bash
-Copy
-Edit
 python train_model.py
-This will:
 
-Clean the text data.
+This will: Clean the text data.
 
 Tokenize and vectorize the text.
 
@@ -68,10 +57,8 @@ Save the model (sentence_completion.h5) and tokenizer (tokenizer.pkl) to disk.
 # Step 6: Run the Flask App
 After training the model, you can start the Flask app:
 
-bash
-Copy
-Edit
 python app.py
+
 This will start a web server. You can access the app at http://localhost:5000.
 
 # Step 7: Interact with the Web App
